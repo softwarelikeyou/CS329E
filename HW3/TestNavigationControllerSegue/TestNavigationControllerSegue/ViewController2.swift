@@ -29,4 +29,9 @@ class ViewController2: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Hello")
+    }
+    
+    
 }
