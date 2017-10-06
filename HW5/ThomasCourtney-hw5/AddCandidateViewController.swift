@@ -10,8 +10,6 @@ import UIKit
 import CoreData
 
 class AddCandidateViewController: UIViewController {
-
-    var candidates: [NSManagedObject] = []
     
     @IBOutlet weak var candidateSavedLabel: UILabel!
     
@@ -73,8 +71,6 @@ class AddCandidateViewController: UIViewController {
         // save the managed object
         do {
             try managedContext.save()
-            // Append candidate to table view list
-            candidates.append(candidate)
             // Show the label "Candidate Saved!"
             candidateSavedLabel.isHidden = false
         } catch let error as NSError {
