@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sGN-Yj-Nvl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FS3-R5-1lk">
+            <objects>
+                <navigationController id="sGN-Yj-Nvl" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Swt-UZ-Sov">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1l3-jb-MF9" kind="relationship" relationship="rootViewController" id="sbC-3S-A9i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qy-db-7vv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="188"/>
+        </scene>
+        <!--My Page View Controller-->
+        <scene sceneID="RCF-4I-u30">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="1l3-jb-MF9" customClass="MyPageViewController" customModule="thomascourtney_hw6" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="L2M-Di-Zgl"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhg-eX-vYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="188"/>
+        </scene>
+        <!--My View Controller-->
+        <scene sceneID="Krj-fm-93G">
+            <objects>
+                <viewController storyboardIdentifier="viewController" id="0aK-p8-YQE" customClass="MyViewController" customModule="thomascourtney_hw6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ijH-zl-Cbj"/>
+                        <viewControllerLayoutGuide type="bottom" id="fkD-An-tOH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vyM-Dg-66F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="tuX-5d-G9H">
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </pageControl>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imageView" image="wonders1" highlightedImage="wonders1" translatesAutoresizingMaskIntoConstraints="NO" id="2I5-9l-X6g"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fkD-An-tOH" firstAttribute="top" secondItem="tuX-5d-G9H" secondAttribute="bottom" constant="8" symbolic="YES" id="A7l-GM-5Z3"/>
+                            <constraint firstItem="tuX-5d-G9H" firstAttribute="centerX" secondItem="vyM-Dg-66F" secondAttribute="centerX" id="GFz-nD-2BN"/>
+                            <constraint firstItem="2I5-9l-X6g" firstAttribute="top" secondItem="ijH-zl-Cbj" secondAttribute="bottom" constant="195" id="LQs-pL-5Jp"/>
+                            <constraint firstItem="tuX-5d-G9H" firstAttribute="width" secondItem="vyM-Dg-66F" secondAttribute="height" multiplier="343:667" id="hhd-zt-n5Z"/>
+                            <constraint firstItem="2I5-9l-X6g" firstAttribute="leading" secondItem="tuX-5d-G9H" secondAttribute="leading" id="jbD-ns-3rB"/>
+                            <constraint firstItem="2I5-9l-X6g" firstAttribute="centerY" secondItem="vyM-Dg-66F" secondAttribute="centerY" id="lGM-E5-j0g"/>
+                            <constraint firstItem="2I5-9l-X6g" firstAttribute="trailing" secondItem="tuX-5d-G9H" secondAttribute="trailing" id="y2O-vj-6Vv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="2I5-9l-X6g" id="34l-Kq-CzZ"/>
+                        <outlet property="pageControl" destination="tuX-5d-G9H" id="R7B-Fb-6b5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ivg-b6-mlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="186.65667166416793"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wonders1" width="426" height="278"/>
+    </resources>
+</document>
