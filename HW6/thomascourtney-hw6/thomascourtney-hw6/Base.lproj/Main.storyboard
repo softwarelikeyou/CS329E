@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,25 +46,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="tuX-5d-G9H">
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                            </pageControl>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imageView" image="wonders1" highlightedImage="wonders1" translatesAutoresizingMaskIntoConstraints="NO" id="2I5-9l-X6g"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fkD-An-tOH" firstAttribute="top" secondItem="tuX-5d-G9H" secondAttribute="bottom" constant="8" symbolic="YES" id="A7l-GM-5Z3"/>
-                            <constraint firstItem="tuX-5d-G9H" firstAttribute="centerX" secondItem="vyM-Dg-66F" secondAttribute="centerX" id="GFz-nD-2BN"/>
                             <constraint firstItem="2I5-9l-X6g" firstAttribute="top" secondItem="ijH-zl-Cbj" secondAttribute="bottom" constant="195" id="LQs-pL-5Jp"/>
-                            <constraint firstItem="tuX-5d-G9H" firstAttribute="width" secondItem="vyM-Dg-66F" secondAttribute="height" multiplier="343:667" id="hhd-zt-n5Z"/>
-                            <constraint firstItem="2I5-9l-X6g" firstAttribute="leading" secondItem="tuX-5d-G9H" secondAttribute="leading" id="jbD-ns-3rB"/>
+                            <constraint firstItem="2I5-9l-X6g" firstAttribute="centerX" secondItem="vyM-Dg-66F" secondAttribute="centerX" id="i8l-R6-too"/>
                             <constraint firstItem="2I5-9l-X6g" firstAttribute="centerY" secondItem="vyM-Dg-66F" secondAttribute="centerY" id="lGM-E5-j0g"/>
-                            <constraint firstItem="2I5-9l-X6g" firstAttribute="trailing" secondItem="tuX-5d-G9H" secondAttribute="trailing" id="y2O-vj-6Vv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="2I5-9l-X6g" id="34l-Kq-CzZ"/>
-                        <outlet property="pageControl" destination="tuX-5d-G9H" id="R7B-Fb-6b5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ivg-b6-mlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
