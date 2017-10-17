@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0A7C9F1F959D3F00A58C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA25ADFD1F92975400BFBD53 /* Assets.xcassets */; };
 		AA0B664B1F94831600FE33A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA25ADF71F92975400BFBD53 /* Main.storyboard */; };
 		AA25ADF41F92975400BFBD53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25ADF31F92975400BFBD53 /* AppDelegate.swift */; };
 		AA25ADFC1F92975400BFBD53 /* thomascourtney_hw6.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA25ADFA1F92975400BFBD53 /* thomascourtney_hw6.xcdatamodeld */; };
-		AA25ADFE1F92975400BFBD53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA25ADFD1F92975400BFBD53 /* Assets.xcassets */; };
 		AA25AE011F92975400BFBD53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA25ADFF1F92975400BFBD53 /* LaunchScreen.storyboard */; };
 		AA25AE0B1F92AA8A00BFBD53 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25AE0A1F92AA8A00BFBD53 /* MyPageViewController.swift */; };
 		AA634E631F9315D800C5463C /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA634E621F9315D800C5463C /* MyViewController.swift */; };
@@ -130,8 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0B664B1F94831600FE33A7 /* Main.storyboard in Resources */,
+				AA0A7C9F1F959D3F00A58C42 /* Assets.xcassets in Resources */,
 				AA25AE011F92975400BFBD53 /* LaunchScreen.storyboard in Resources */,
-				AA25ADFE1F92975400BFBD53 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
